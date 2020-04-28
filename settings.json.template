@@ -7,7 +7,7 @@
   // name your instance!
   "title": "IQUIDUS",
 
-  "address": "127.0.0.1:3001",
+  "address": "127.0.0.1:80",
 
   // coin name
   "coin": "Darkcoin",
@@ -58,18 +58,21 @@
   // language settings
   "locale": "locale/en.json",
 
-  // menu settings
+   // menu settings
   "display": {
     "api": true,
-    "markets": true,
+    "markets": false,
     "richlist": true,
-    "twitter": true,
+    "twitter": false,
     "facebook": false,
     "googleplus": false,
     "youtube": false,
+    "discord": false,
+    "github": false,
     "search": true,
     "movement": true,
-    "network": true
+    "network": true,
+    "masternodes": true
   },
 
   // index page (valid options for difficulty are POW, POS or Hybrid)
@@ -115,11 +118,13 @@
     "high_flag": 5000
   },
 
-  // twitter, facebook, googleplus, youtube
+  // twitter, facebook, googleplus
   "twitter": "iquidus",
   "facebook": "yourfacebookpage",
-  "googleplus": "yourgooglepluspage",
   "youtube": "youryoutubechannel",
+  "googleplus": "yourgooglepluspage",
+  "discord": "CnKjbn",
+  "github": "BlockExplorer-Monster/explorer",
 
   //genesis
   "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
@@ -140,7 +145,7 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "COINBASE",
+  "supply": "GETINFO",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
